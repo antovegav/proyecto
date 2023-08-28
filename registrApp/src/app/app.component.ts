@@ -16,7 +16,7 @@ export class AppComponent {
     { title: 'Asistencia', url: '/folder/Asistencia', icon: 'list' },
     { title: 'Codigo QR', url: '/folder/Codigo QR', icon: 'qr-code' },
     { title: 'Editar Usuario', url: '/folder/Editar Usuario', icon: 'person-circle' },
-    { title: 'Ingresar', url: 'register', icon: 'log-in' },
+    { title: 'Ingresar', url: 'login', icon: 'log-in' },
   ];
 
   // ARREGLO DE LAS ETIQUETAS QUE SE MOSTRARAN EN EL MENU
