@@ -12,6 +12,8 @@ import { IonicModule } from '@ionic/angular';
 })
 export class RegisterPage implements OnInit {
 
+  titulo : string = "Registro de Usuario";
+
   constructor() { }
 
   ngOnInit() {

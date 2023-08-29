@@ -12,9 +12,14 @@ import { IonicModule } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
 
+  titulo : string = "Iniciar Sesión";
+
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
+
