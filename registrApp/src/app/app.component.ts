@@ -12,7 +12,7 @@ import { IonicModule } from '@ionic/angular';
 export class AppComponent {
   // ARREGLO CON LAS PAGINAS QUE SE MOSTRARAN EN EL MENU
   public appPages = [
-    { title: 'Inicio', url: '/folder/RegistrApp', icon: 'home' },
+    { title: 'Inicio', url: 'inicio', icon: 'home' },
     { title: 'Asistencia', url: '/folder/Asistencia', icon: 'list' },
     { title: 'Codigo QR', url: '/folder/Codigo QR', icon: 'qr-code' },
     { title: 'Editar Usuario', url: '/folder/Editar Usuario', icon: 'person-circle' },
