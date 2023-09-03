@@ -14,6 +14,18 @@ export class LoginPage implements OnInit {
 
   titulo : string = "Iniciar Sesión";
 
+  usuarios : Array<any> = [
+    {
+      nombre: "Antonio Vega",
+      email: "anto.vegav@duocuc.cl",
+      password: "a123456"
+    },
+    {
+      nombre: "Jorge Gonzalez",
+      email: "jogonzalez@gmail.com",
+      password: "a123456"
+    }
+  ];
 
   constructor() { }
 
@@ -22,4 +34,5 @@ export class LoginPage implements OnInit {
   }
 
 }
+
 

@@ -20,6 +20,5 @@ export class AppComponent {
   ];
 
   // ARREGLO DE LAS ETIQUETAS QUE SE MOSTRARAN EN EL MENU
-  public labels = [ ];
   constructor() {}
 }
