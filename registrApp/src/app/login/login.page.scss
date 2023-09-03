@@ -1,12 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .link{
     color: goldenrod;
 }
 
 ion-button{
     color: #000;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5px;      
+    width: 50%;
+    margin-left: 90px;
+    margin-bottom: 50px;
 }
 
 .titulo{
     color: gold;
+    padding-left: 80px;
+}
+
+ion-text h6{
+    text-align: center;
+    padding: 2px, 2px, 2px, 2px;
+    margin: 0px
+}
+
+ion-item{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
