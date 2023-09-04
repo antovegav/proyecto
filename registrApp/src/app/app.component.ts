@@ -14,7 +14,7 @@ export class AppComponent {
   public appPages = [
     // { title: 'Inicio', url: 'estudiante', icon: 'home' },
     { title: 'Codigo QR', url: 'inicio', icon: 'qr-code' },
-    { title: 'Editar Usuario', url: 'password-olvidado', icon: 'person-circle' },
+    { title: 'Cambiar Contraseña', url: 'password-olvidado', icon: 'person-circle' },
     { title: 'Salir', url: 'login', icon: 'log-in' },
   ];
 

@@ -12,7 +12,7 @@ export class UserModel {
 
     }
     
-
+    //Convierte un objeto de tipo UserModel a un objeto de tipo JSON 
     static crearUsuario(event: {
         id: number,
         nombre: string,

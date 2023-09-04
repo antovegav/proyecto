@@ -15,8 +15,9 @@ export class PasswordOlvidadoPage implements OnInit {
 
   titulo = 'Cambiar Contraseña';
 
+  // Objeto que almacena los datos del usuario
   userolvidopasswordModal = {
-    username: '',
+  username: '',
   };
   constructor() { }
 
@@ -24,7 +25,7 @@ export class PasswordOlvidadoPage implements OnInit {
   }
 
 
-
+  // Función que se ejecuta cuando se presiona el botón de cambiar contraseña
   userolvidopasswordModalRestart(): void {
     this.userolvidopasswordModal.username = '';
   }

@@ -6,6 +6,7 @@ import { UserModel } from '../models/UserModel';
 })
 export class ListuserService {
 
+  // Arreglo que almacena los usuarios
   private userList: UserModel[] =  [
     {
       id: 1,
@@ -50,10 +51,12 @@ export class ListuserService {
   ];
 
 
+  // Función que agrega un usuario al arreglo
   addUser(user: UserModel) {
     this.userList.push(user);
   }
 
+  // Función que retorna el arreglo de usuarios
   getUserList() {
     return this.userList;
   }
