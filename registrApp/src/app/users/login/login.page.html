@@ -7,10 +7,10 @@
   ></ion-img> 
 
     <!-- ejemplo de ruta para imagen -->
-  <ion-img
+  <!-- <ion-img
     src="./assets/img/Logo_DuocUC.svg"
     alt="logo duoc" ></ion-img>
-  
+   -->
   <!-- Boton y texto para escribir usuario -->
   <ion-item>
     <ion-label position="floating">Usuario.</ion-label>
@@ -24,17 +24,17 @@
       type="password" [(ngModel)]="userLoginModal.password"
     ></ion-input>
   </ion-item>
-  <ion-button expand= "block" color="secondary" (click)="userLogin(userLoginModal)">Ingresar</ion-button>
+  <ion-button expand= "block" color="warning" (click)="userLogin(userLoginModal)">Ingresar</ion-button>
 
-  <ion-button expand="block" color="dark" >
+  <!-- <ion-button expand="block" color="dark" >
     Registrar Usuario
   </ion-button>
 
   <ion-button expand="block" color="dark" (click)="goToInicio()" >
     volver a inicio
-  </ion-button>
+  </ion-button> -->
 
-  <ion-button expand="block" color="success" (click)="goToPassworOlvidado()" >
+  <ion-button expand="block" color="danger" (click)="goToPassworOlvidado()" >
     ¿olvidaste tu contraseña?
   </ion-button>
   
