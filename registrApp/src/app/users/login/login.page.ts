@@ -28,6 +28,8 @@ export class LoginPage implements OnInit {
         userType: 'estudiante',
         username: 'juanperez',
         password: 'password1',
+        nacimiento: '1999-01-01',
+        correo: 'juperez@duocuc.cl',
       },
       {
         id: 2,
@@ -36,6 +38,8 @@ export class LoginPage implements OnInit {
         userType: 'estudiante',
         username: 'mariagonzalez',
         password: 'password2',
+        nacimiento: '1995-06-12',
+        correo: "agonzalez@duocuc.cl",
       },
       {
         id: 3,
@@ -44,6 +48,8 @@ export class LoginPage implements OnInit {
         userType: 'profesor',
         username: 'pedrosanchez',
         password: 'password3',
+        nacimiento: undefined,
+        correo: "pesanchez@profesor.duoc.cl",
       },
       {
         id: 4,
@@ -52,6 +58,8 @@ export class LoginPage implements OnInit {
         userType: 'profesor',
         username: 'anamartinez',
         password: 'password4',
+        nacimiento: undefined,
+      correo: "amartinez@profesor.duoc.cl",
       },
     ];
 
@@ -80,7 +88,7 @@ export class LoginPage implements OnInit {
           }
         }
         if(this.listUser[i].userType == 'estudiante'){
-          console.log("entró");
+          console.log("Ingresando...");
           let sendInfo = this.router.navigate(['/estudiante'], userInfoSend);
           return true;
         }else{

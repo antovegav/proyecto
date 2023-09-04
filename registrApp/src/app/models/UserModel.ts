@@ -6,6 +6,8 @@ export class UserModel {
         public userType: string,
         public username: string,
         public password: string,
+        public nacimiento: string | undefined,
+        public correo: string,
     ) {
 
     }
@@ -18,6 +20,8 @@ export class UserModel {
         userType: string,
         username: string,
         password: string,
+        nacimiento: string,
+        correo: string,
     }) {
         return new UserModel(
             event.id,
@@ -25,7 +29,9 @@ export class UserModel {
             event.apellido,
             event.userType,
             event.username,
-            event.password
+            event.password,
+            event.nacimiento,
+            event.correo,
         );
     }
 }

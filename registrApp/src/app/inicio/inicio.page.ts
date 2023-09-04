@@ -12,6 +12,8 @@ import { IonicModule } from '@ionic/angular';
 })
 export class InicioPage implements OnInit {
 
+  userInfoReceived: any;
+
   constructor() { }
 
   ngOnInit() {

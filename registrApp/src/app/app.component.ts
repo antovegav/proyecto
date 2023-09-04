@@ -12,11 +12,11 @@ import { IonicModule } from '@ionic/angular';
 export class AppComponent {
   // ARREGLO CON LAS PAGINAS QUE SE MOSTRARAN EN EL MENU
   public appPages = [
-    { title: 'Inicio', url: 'inicio', icon: 'home' },
-    { title: 'Asistencia', url: '/folder/Asistencia', icon: 'list' },
-    { title: 'Codigo QR', url: '/folder/Codigo QR', icon: 'qr-code' },
-    { title: 'Editar Usuario', url: '/folder/Editar Usuario', icon: 'person-circle' },
-    { title: 'Ingresar', url: 'login', icon: 'log-in' },
+    { title: 'Inicio', url: 'estudiante', icon: 'home' },
+    { title: 'Asistencia', url: 'inicio', icon: 'list' },
+    { title: 'Codigo QR', url: 'inicio', icon: 'qr-code' },
+    { title: 'Editar Usuario', url: 'password-olvidado', icon: 'person-circle' },
+    { title: 'Salir', url: 'login', icon: 'log-in' },
   ];
 
   // ARREGLO DE LAS ETIQUETAS QUE SE MOSTRARAN EN EL MENU

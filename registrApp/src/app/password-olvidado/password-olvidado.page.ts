@@ -13,6 +13,8 @@ import { IUserLogin } from '../models/IUserLogin';
 })
 export class PasswordOlvidadoPage implements OnInit {
 
+  titulo = 'Cambiar Contraseña';
+
   userolvidopasswordModal = {
     username: '',
   };

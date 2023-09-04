@@ -5,4 +5,6 @@ export interface IUser {
     userType: string,
     username: string,
     password: string,
+    nacimiento: Date,
+    correo: string,
 }
