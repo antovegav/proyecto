@@ -20,21 +20,22 @@
     <!-- CORREO -->
     <ion-item>
       <ion-label position="floating">Correo Institucional</ion-label>
-      <ion-input type="email"></ion-input>
+      <ion-input type="email" [(ngModel)]="userLogin.email"></ion-input>
     </ion-item>
 
     <!-- CONTRASEÑA -->
     <ion-item>
       <ion-label position="floating">Contraseña</ion-label>
-      <ion-input type="password" ></ion-input>
+      <ion-input type="password" [(ngModel)]="userLogin.password" ></ion-input>
     </ion-item>
     
     <!-- INICIAR -->
-    <ion-button class="ion-padding" color="warning">Acceder</ion-button>
+    <ion-button class="ion-padding" color="warning" (click)="usersLogin(userLogin)">Acceder</ion-button>
+    <ion-button [routerLink]="['/alumno',userLogin.email]"> A </ion-button>
     
-    <!-- REGISTRAR -->
+    <!-- CONTACTO -->
     <ion-text>
-      <h6>¿Problemas con tu cuenta? Sigue este <a class="link" href="https://www.duoc.cl/contacto/">link</a> para más ayuda.</h6>
+      <h6>¿Problemas con tu cuenta? Sigue este <a class="link" href="https://www.duoc.cl/contacto/">enlace</a> para más ayuda.</h6>
     </ion-text>
   </div>
   
