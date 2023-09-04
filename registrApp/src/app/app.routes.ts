@@ -1,11 +1,7 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'folder/inbox',
-    pathMatch: 'full',
-  },
+
   {
     path: 'folder/:id',
     loadComponent: () =>
@@ -18,9 +14,33 @@ export const routes: Routes = [
   {
     path: 'register',
     loadComponent: () => import('./users/register/register.page').then( m => m.RegisterPage)
-  },  {
+  },
+  {
     path: 'inicio',
     loadComponent: () => import('./inicio/inicio.page').then( m => m.InicioPage)
+  },  
+  {
+    path: 'estudiante',
+    loadComponent: () => import('./pages/estudiante/estudiante.page').then( m => m.EstudiantePage)
   },
+  {
+    path: 'profesor',
+    loadComponent: () => import('./pages/profesor/profesor.page').then( m => m.ProfesorPage)
+  },
+  {
+    path: 'password-olvidado',
+    loadComponent: () => import('./password-olvidado/password-olvidado.page').then( m => m.PasswordOlvidadoPage)
+  },
+  {
+    path: '**',
+    redirectTo: 'login',
+    pathMatch: 'full',
+  },
+  
+
+
+
+
+
 
 ];

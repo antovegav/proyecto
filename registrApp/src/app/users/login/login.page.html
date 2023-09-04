@@ -1,13 +1,41 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
+  <!-- padding para darle formato - espacio a los lados -->
+<ion-content class="ion-padding">
+  <ion-img
+    class="logo"
+    src="./assets/img/Logo_DuocUC.svg"
+    alt="Duoc UC Logo"
+  ></ion-img> 
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">login</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+    <!-- ejemplo de ruta para imagen -->
+  <ion-img
+    src="./assets/img/Logo_DuocUC.svg"
+    alt="logo duoc" ></ion-img>
+  
+  <!-- Boton y texto para escribir usuario -->
+  <ion-item>
+    <ion-label position="floating">Usuario.</ion-label>
+    <ion-input type="email" [(ngModel)]="userLoginModal.username"></ion-input>
+  </ion-item>
+
+  <!-- Contraseña - imput tipo pasword prote-->
+  <ion-item>
+    <ion-label position="floating">Contraseña.</ion-label>
+    <ion-input
+      type="password" [(ngModel)]="userLoginModal.password"
+    ></ion-input>
+  </ion-item>
+  <ion-button expand= "block" color="secondary" (click)="userLogin(userLoginModal)">Ingresar</ion-button>
+
+  <ion-button expand="block" color="dark" >
+    Registrar Usuario
+  </ion-button>
+
+  <ion-button expand="block" color="dark" (click)="goToInicio()" >
+    volver a inicio
+  </ion-button>
+
+  <ion-button expand="block" color="success" (click)="goToPassworOlvidado()" >
+    ¿olvidaste tu contraseña?
+  </ion-button>
+  
+
