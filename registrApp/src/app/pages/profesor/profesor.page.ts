@@ -13,6 +13,8 @@ import { ActivatedRoute, Router } from '@angular/router';
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class ProfesorPage implements OnInit {
+
+  titulo = 'Inicio';
   userInfoReceived: UserModel | undefined;
   idUserHtmlRouterLink: any;
 
